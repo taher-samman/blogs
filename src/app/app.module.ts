@@ -16,6 +16,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProgressBarComponent } from './tools/progress-bar/progress-bar.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RegisterComponent } from './templates/register/register.component';
+import { AddComponent } from './templates/blogs/add/add.component';
+import { BlogsComponent } from './templates/blogs/blogs.component';
+import { LayoutComponent } from './templates/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,9 @@ import { RegisterComponent } from './templates/register/register.component';
     LoginComponent,
     ProgressBarComponent,
     RegisterComponent,
+    AddComponent,
+    BlogsComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,

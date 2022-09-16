@@ -36,7 +36,7 @@ export class RegisterComponent {
         if (data['status']) {
           this._snackBar.open('Hello ' + data['user']['username'], 'Success', { duration: 2000, });
           localStorage.setItem('_blogsUser', JSON.stringify(data['user']));
-          localStorage.setItem('_blogsToken', JSON.stringify(data['token']));
+          localStorage.setItem('_blogsToken', data['token']);
           this.router.navigate(['']);
         }
       }).catch(error => {

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApisService } from './services/apis/apis.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blogs';
+  constructor(private apis: ApisService) {
+  }
 }

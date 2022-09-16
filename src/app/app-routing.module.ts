@@ -7,12 +7,20 @@ import { Auth } from './tools/auth/index';
 import { LoginComponent } from './templates/login/login.component';
 import { NotAuth } from './tools/auth/notauth';
 import { RegisterComponent } from './templates/register/register.component';
+import { BlogsComponent } from './templates/blogs/blogs.component';
+import { Categories } from './tools/categories/index';
+import { LayoutComponent } from './templates/layout/layout.component';
 const routes: Routes = [
-  { path: 'about', component: AboutComponent, canActivate: [Auth] },
   { path: 'login', component: LoginComponent, canActivate: [NotAuth] },
   { path: 'register', component: RegisterComponent, canActivate: [NotAuth] },
-  { path: '', component: HomeComponent, canActivate: [Auth] },
-  { path: '**', component: NotFoundComponent, canActivate: [Auth] }
+  {
+    path: '', component: LayoutComponent, canActivate: [Auth], children: [
+      { path: '', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'blogs', component: BlogsComponent, canActivate: [Categories] },
+    ]
+  },
+  { path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({
