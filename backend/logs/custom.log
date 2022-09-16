@@ -1,0 +1,1244 @@
+2022-09-09 07:19:42 [::1][1][-][info][custom] Taher: 7
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:19:42 [::1][1][-][info][application] $_GET = [
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55329'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/8'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662707982.3597
+    'REQUEST_TIME' => 1662707982
+]
+2022-09-09 07:21:26 [::1][1][-][info][custom] Taher: 0
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:21:25 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/categories'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55344'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/1'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708085.9772
+    'REQUEST_TIME' => 1662708085
+]
+2022-09-09 07:21:50 [::1][1][-][info][custom] Taher: 0
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:21:50 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55347'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/1'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708110.5939
+    'REQUEST_TIME' => 1662708110
+]
+2022-09-09 07:21:53 [::1][1][-][info][custom] Taher: 1
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:21:53 [::1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55347'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/2'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708113.5988
+    'REQUEST_TIME' => 1662708113
+]
+2022-09-09 07:22:15 [::1][1][-][info][custom] Taher: 1
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:22:15 [::1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55349'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/2'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708135.4794
+    'REQUEST_TIME' => 1662708135
+]
+2022-09-09 07:22:17 [::1][1][-][info][custom] Taher: 0
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:22:17 [::1][1][-][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55349'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/3'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708137.5359
+    'REQUEST_TIME' => 1662708137
+]
+2022-09-09 07:22:19 [::1][1][-][info][custom] Taher: 0
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:22:19 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55349'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/1'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708139.1871
+    'REQUEST_TIME' => 1662708139
+]
+2022-09-09 07:22:20 [::1][1][-][info][custom] Taher: 1
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:22:20 [::1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55349'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/2'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708140.1401
+    'REQUEST_TIME' => 1662708140
+]
+2022-09-09 07:22:21 [::1][1][-][info][custom] Taher: 0
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:22:21 [::1][1][-][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55349'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/3'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708141.3588
+    'REQUEST_TIME' => 1662708141
+]
+2022-09-09 07:22:22 [::1][1][-][info][custom] Taher: 1
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:22:22 [::1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55349'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/2'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708142.0274
+    'REQUEST_TIME' => 1662708142
+]
+2022-09-09 07:22:27 [::1][1][-][info][custom] Taher: 1
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:22:27 [::1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_backendCSRF' => '3sKvmKPMDCVBav5fYFCM3NSM2ewgNQKp_c4BIbGGMZDr8J2u1P5bajEbkCk0PvqKp9aWtHFAVZuplzlg08FcqA=='
+    'Category' => [
+        'name' => 'yahya'
+        'slug' => 'yahya'
+        'image' => ''
+        'sort' => '1'
+        'parent' => '3'
+    ]
+    'add-button' => ''
+]
+
+$_FILES = [
+    'Category' => [
+        'name' => [
+            'image' => ''
+        ]
+        'type' => [
+            'image' => ''
+        ]
+        'tmp_name' => [
+            'image' => ''
+        ]
+        'error' => [
+            'image' => 4
+        ]
+        'size' => [
+            'image' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+    'success' => 'Category Updated Succesfly'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1003'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryxwoBgHJXU8FeEm70'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55350'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/2'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708147.323
+    'REQUEST_TIME' => 1662708147
+]
+2022-09-09 07:22:42 [::1][1][-][info][custom] Taher: 3
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:22:41 [::1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_backendCSRF' => 'Kle3aaJyhVxPHlAvBTnYLziAm3Z5YVM1qhNEFB3AsmwfZYVf1UDSEz9vPllRV655S9rULigUBAf-SnxVf4ffVA=='
+    'Category' => [
+        'name' => 'yahya'
+        'slug' => 'yahya'
+        'image' => ''
+        'sort' => '1'
+        'parent' => '1'
+    ]
+    'add-button' => ''
+]
+
+$_FILES = [
+    'Category' => [
+        'name' => [
+            'image' => ''
+        ]
+        'type' => [
+            'image' => ''
+        ]
+        'tmp_name' => [
+            'image' => ''
+        ]
+        'error' => [
+            'image' => 4
+        ]
+        'size' => [
+            'image' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+    'success' => 'Category Updated Succesfly'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1003'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryPAv2n5lBFQn00dxN'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55352'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/2'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708161.9534
+    'REQUEST_TIME' => 1662708161
+]
+2022-09-09 07:22:43 [::1][1][-][info][custom] Taher: 0
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:22:43 [::1][1][-][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55352'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/3'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708163.0731
+    'REQUEST_TIME' => 1662708163
+]
+2022-09-09 07:22:45 [::1][1][-][info][custom] Taher: 0
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:22:44 [::1][1][-][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_POST = [
+    '_backendCSRF' => 'azeXjli2ZQEwhvxaXZDHstREJq61tD1vryRaXqhzeNdeBaW4L4QyTkD3kiwJ_rHkpx5p9uTBal37fWIfyjQV7w=='
+    'Category' => [
+        'name' => 'abdalah'
+        'slug' => 'abdalh'
+        'image' => ''
+        'sort' => '2'
+        'parent' => '2'
+    ]
+    'add-button' => ''
+]
+
+$_FILES = [
+    'Category' => [
+        'name' => [
+            'image' => ''
+        ]
+        'type' => [
+            'image' => ''
+        ]
+        'tmp_name' => [
+            'image' => ''
+        ]
+        'error' => [
+            'image' => 4
+        ]
+        'size' => [
+            'image' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+    'success' => 'Category Updated Succesfly'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1006'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarymmM6ukpfwrIFA6Em'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55352'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/3'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708164.9623
+    'REQUEST_TIME' => 1662708164
+]
+2022-09-09 07:23:35 [::1][1][-][info][custom] Taher: 1
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:23:35 [::1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55356'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/2'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708215.7692
+    'REQUEST_TIME' => 1662708215
+]
+2022-09-09 07:23:36 [::1][1][-][info][custom] Taher: 0
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:23:36 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/category/2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55356'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/1'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708216.8403
+    'REQUEST_TIME' => 1662708216
+]
+2022-09-09 07:25:15 [::1][1][-][info][custom] Taher: 0
+    in /Applications/MAMP/htdocs/blogs/backend/backend/controllers/SiteController.php:154
+2022-09-09 07:25:15 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'mailpoet_subscriber' => '{\"subscriber_id\":1}'
+    'mailpoet_page_view' => '{\"timestamp\":1662125516}'
+    '_backendUser' => '7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"naPUjdLVpB8nKbMFkff-7O9S133hDwbY\",2592000]\";}'
+    'PHPBACKSESSID' => 'a6brq5mj97vg9oo7l3mej4jd0l'
+    '_backendCSRF' => '6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"5226w2WOpqnvTnvVsZOXQuW2TY8AbGm8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'naPUjdLVpB8nKbMFkff-7O9S133hDwbY'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/blogs/backend/backend/web/site/categories'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8,fr;q=0.7'
+    'HTTP_COOKIE' => 'mailpoet_subscriber=%7B%22subscriber_id%22%3A1%7D; mailpoet_page_view=%7B%22timestamp%22%3A1662125516%7D; _backendUser=7ae60de20b61e210a8a21218a87f575eddc39fd30d37c688f79f5b7f587fbabca%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22naPUjdLVpB8nKbMFkff-7O9S133hDwbY%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=a6brq5mj97vg9oo7l3mej4jd0l; _backendCSRF=6d4b7dcda41c14df5551f81503ae7bcb1b838d8f3d69e6573d27ae061b2d38faa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%225226w2WOpqnvTnvVsZOXQuW2TY8AbGm8%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/8.0.8 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/blogs/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55361'
+    'REDIRECT_URL' => '/blogs/backend/backend/web/site/category/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/blogs/backend/backend/web/site/category/1'
+    'SCRIPT_NAME' => '/blogs/backend/backend/web/index.php'
+    'PHP_SELF' => '/blogs/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1662708315.3399
+    'REQUEST_TIME' => 1662708315
+]
