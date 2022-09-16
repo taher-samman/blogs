@@ -2,28 +2,28 @@
 
 namespace api\controllers;
 
-use common\models\Category;
-use Yii;
-use yii\filters\VerbFilter;
 use yii\web\Controller;
+use Yii;
 use yii\filters\auth\CompositeAuth;
 use yii\filters\auth\HttpBasicAuth;
 use yii\filters\auth\HttpBearerAuth;
 use yii\filters\auth\QueryParamAuth;
+use yii\filters\VerbFilter;
+use common\models\Blogs;
 
 /**
  * Site controller
  */
-class SiteController extends Controller
+class BlogsController extends Controller
 {
     public $controller;
     public $id;
-    public $categoriesModel;
+    public $blogsModel;
     public function __construct($id, $controller)
     {
         $this->id = $id;
         $this->controller = $controller;
-        $this->categoriesModel = new Category();
+        $this->blogsModel = new Blogs();
         parent::__construct($id, $controller);
     }
     public function behaviors()
@@ -40,7 +40,7 @@ class SiteController extends Controller
             'verbs' => [
                 'class' => VerbFilter::class,
                 'actions' => [
-                    'getcategories' => ['get'],
+                    'add' => ['post']
                 ],
             ],
             'authenticator' => [
@@ -54,45 +54,20 @@ class SiteController extends Controller
             ],
         ];
     }
-    public function actionIndex()
-    {
-        return 'Site Index';
-    }
-    public function categoriesFamily($parent)
+
+    public function actionAdd()
     {
         $result = [];
-        $categories = $this->categoriesModel
-            ->find()
-            ->where(['enabled' => 1])
-            ->andWhere(['parent' => $parent])
-            ->orderBy('sort')
-            ->all();
-        if (count($categories) > 0) {
-            foreach ($categories as $key => $category) {
-                $result[] = [
-                    'id' => $category->id,
-                    'name' => $category->name,
-                    'image' => $category->image,
-                    'children' => $this->categoriesFamily($category->id)
-                ];
-            }
-        }
-        return $result;
-    }
-    public function actionGetcategories()
-    {
+        $model = new Blogs();
         $response = Yii::$app->response;
         $response->format = \yii\web\Response::FORMAT_JSON;
         $response->statusCode = 200;
-        $result = [];
-        $result = [
-            'status' => true,
-            'data' => $this->categoriesFamily(0)
-        ];
-        if (count($result) == 0) {
-            $response->statusCode = 401;
-            $result = 'Ma 3na Categories';
-        }
+        $model->name = Yii::$app->request->post('name');
+        $model->slug = Yii::$app->request->post('name');
+        $model->description = Yii::$app->request->post('description');
+        $model->cat_id = Yii::$app->request->post('categories');
+        $model->user_id = Yii::$app->request->post(1);
+        $model->save();
         $response->data = $result;
         return $response;
     }

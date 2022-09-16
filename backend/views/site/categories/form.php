@@ -5,7 +5,7 @@
 
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
-use backend\models\Category;
+use common\models\Category;
 
 $categories = new Category();
 $categories = $categories->find()->where(['<', 'id', $model->id ? $model->id : 0])->andWhere(['!=', 'id', $model->id ? $model->id : 0])->all();

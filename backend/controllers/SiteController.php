@@ -8,7 +8,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
-use backend\models\Category;
+use common\models\Category;
 use backend\models\UploadForm;
 use yii\filters\Cors;
 use yii\web\UploadedFile;
