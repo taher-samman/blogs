@@ -1,0 +1,22 @@
+<div class="container min-vh-100 d-flex flex-column">
+    <form [formGroup]="form" (ngSubmit)="register()" class="m-auto w-50">
+        <progress-bar *ngIf="progressBar"></progress-bar>
+        <div class="mb-3">
+            <label for="exampleInputUsername1" class="form-label">Username</label>
+            <input type="username" formControlName="username" class="form-control" id="exampleInputUsername1" aria-describedby="usernameHelp">
+            <div *ngIf="username?.touched && !username?.valid" class="alert alert-danger">Username Error</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div *ngIf="email?.touched && !email?.valid" class="alert alert-danger">Email Error</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+            <div *ngIf="password?.touched && !password?.valid" class="alert alert-danger">Password Error</div>
+        </div>
+        <button type="submit" class="btn btn-success">Register</button>
+        <button (click)="login()" class="btn ms-1">Login</button>
+    </form>
+</div>

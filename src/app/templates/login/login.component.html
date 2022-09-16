@@ -1,0 +1,17 @@
+<div class="container min-vh-100 d-flex flex-column">
+    <form [formGroup]="form" (ngSubmit)="login()" class="m-auto w-50">
+        <progress-bar *ngIf="progressBar"></progress-bar>
+        <div class="mb-3">
+            <label for="exampleInputUsername1" class="form-label">Username</label>
+            <input type="username" formControlName="username" class="form-control" id="exampleInputUsername1" aria-describedby="usernameHelp">
+            <div *ngIf="username?.touched && !username?.valid" class="alert alert-danger">Username Error</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+            <div *ngIf="password?.touched && !password?.valid" class="alert alert-danger">Password Error</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button (click)="register()" class="btn ms-1">Register</button>
+    </form>
+</div>
