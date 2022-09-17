@@ -20,7 +20,7 @@ class m220908_163212_create_blogs_table extends Migration
             'id' => $this->primaryKey(),
             'user_id' => $this->integer(),
             'name' => $this->string(255),
-            'slug' => $this->string(255)->notNull()->unique(),
+            'slug' => $this->string(255)->notNull(),
             'description' => $this->string(255),
             'cat_id' => $this->integer(),
             'enabled' => $this->integer(1)->defaultValue(1),

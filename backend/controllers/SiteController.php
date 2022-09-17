@@ -127,6 +127,7 @@ class SiteController extends Controller
         $uploader = $this->uploader;
         $model = $this->categoriesModel;
         if ($model->load(Yii::$app->request->post())) {
+            \var_dump(Yii::$app->request->post());
             $uploader->imageFile = UploadedFile::getInstance($model, 'image');
             if (strlen($uploader->imageFile) > 0) {
                 if ($uploader->upload()) {
@@ -140,7 +141,7 @@ class SiteController extends Controller
                 $model->save();
                 Yii::$app->session->setFlash('success', 'Category Added Succesfly');
             }
-            return $this->redirect(['categories']);
+            // return $this->redirect(['categories']);
         }
         $form = $this->getView()->render('categories/form', [
             'model' => $model,

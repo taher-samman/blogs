@@ -2,7 +2,9 @@
 
 namespace api\controllers;
 
+use common\models\Blogs;
 use common\models\Category;
+use common\models\User;
 use Yii;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
@@ -41,11 +43,12 @@ class SiteController extends Controller
                 'class' => VerbFilter::class,
                 'actions' => [
                     'getcategories' => ['get'],
+                    'getblogs' => ['get'],
                 ],
             ],
             'authenticator' => [
                 'class' => CompositeAuth::className(),
-                'except' => [],
+                'except' => ['index'],
                 'authMethods' => [
                     HttpBasicAuth::className(),
                     HttpBearerAuth::className(),
@@ -90,10 +93,41 @@ class SiteController extends Controller
             'data' => $this->categoriesFamily(0)
         ];
         if (count($result) == 0) {
-            $response->statusCode = 401;
-            $result = 'Ma 3na Categories';
+            // $response->statusCode = 401;
+            $result = ['Ma 3na Categories'];
         }
         $response->data = $result;
+        return $response;
+    }
+    public function getUser()
+    {
+        $auth_key = \str_replace('Bearer ', '', Yii::$app->request->getHeaders()->get('Authorization'));
+        return User::findIdentityByAccessToken($auth_key)->id;
+    }
+    public function actionGetblogs()
+    {
+        $response = Yii::$app->response;
+        $response->format = \yii\web\Response::FORMAT_JSON;
+        $response->statusCode = 200;
+        $blogs = [];
+        $model = new Blogs();
+        $query = $model->find()->where(['user_id' => 1])->andWhere(['enabled' => 1])->all();
+        foreach ($query as $key => $blog) {
+            $blogs[] = [
+                'id' => $blog->id,
+                'name' => $blog->name,
+                'description' => $blog->description,
+                'cat_id' => $blog->cat_id
+            ];
+        }
+        if (count($blogs) == 0) {
+            // $response->statusCode = 401;
+            $blogs = ['Ma 3na Bloget'];
+        }
+        $response->data = [
+            'status' => true,
+            'data' => $blogs
+        ];
         return $response;
     }
 }
