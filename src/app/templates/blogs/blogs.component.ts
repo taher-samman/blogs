@@ -7,10 +7,6 @@ import { ApisService } from 'src/app/services/apis/apis.service';
   styleUrls: ['./blogs.component.less']
 })
 export class BlogsComponent implements OnInit {
-  categories:(any)[] = [];
-  constructor(private apis: ApisService) { 
-    this.categories = this.apis.categories;
-  }
 
   ngOnInit(): void {
   }

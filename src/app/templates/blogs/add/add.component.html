@@ -16,6 +16,10 @@
             <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</option>
         </select>
         <div *ngIf="!category?.valid" class="alert alert-danger">Select Category</div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Blog Image</label>
+            <input class="form-control" formControlName="image" (change)="uploadImage($event)" type="file" id="formFile">
+          </div>
         <button type="submit" class="btn btn-primary">Add Blog</button>
     </form>
 </div>

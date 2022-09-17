@@ -4,14 +4,13 @@ import { ApisService } from 'src/app/services/apis/apis.service';
 
 @Injectable({
     providedIn: 'root'
-  })
-export class Categories implements CanActivate {
+})
+export class Blogs implements CanActivate {
 
-    constructor(private router: Router,private apis: ApisService) { }
+    constructor(private router: Router, private apis: ApisService) { }
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-        // console.log('this.apis.categories',this.apis.categories)
-        if(this.apis.categories.length > 0){
+        if (this.apis.blogs.length > 0) {
             return true;
         }
         this.router.navigate(['']);

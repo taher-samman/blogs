@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,8 @@ import { HttpClient } from '@angular/common/http';
 export class ApisService {
   private url = 'http://blogs.backend/';
   categories: (any)[] = [];
-  constructor(private http: HttpClient) { }
+  blogs: (any)[] = [];
+  constructor(private http: HttpClient, private router: Router) { }
 
   login(data: any) {
     const formData = new FormData();
@@ -24,27 +26,52 @@ export class ApisService {
   }
   getCategories() {
     this.http.get(this.url + 'site/getcategories',
-      {
-        headers: {
-          'Authorization': 'Bearer ' + localStorage.getItem('_blogsToken')
-        }
-      }
+      this.getHeaders()
     ).toPromise().then(res => {
       var response: any = { ...res };
-      this.categories = response['data'];
+      if (response['status'])
+        this.categories = response['data'];
     })
+  }
+  getBlogs(gotoblogs: Boolean = false) {
+    this.http.get(this.url + 'site/getblogs',
+      this.getHeaders()
+    ).toPromise().then(res => {
+      var response: any = { ...res };
+      if (response['status'])
+        this.blogs = response['data'];
+      if (gotoblogs) {
+        this.router.navigate(['blogs']);
+      }
+    })
+  }
+  getToken() {
+    return localStorage.getItem('_blogsToken')?.replace('"', '').replace('"', '')
   }
   addBlog(data: any) {
     const formData = new FormData();
     formData.append('name', data['name']);
     formData.append('description', data['description']);
     formData.append('category', data['category']);
-    return this.http.post(this.url + 'blogs/add', formData,
-      {
-        headers: {
-          'Authorization': 'Bearer ' + localStorage.getItem('_blogsToken')
-        }
-      });
+    formData.append('image', data['image']);
+    return this.http.post(this.url + 'blogs/add',
+      formData,
+      this.getHeaders());
+  }
+  getHeaders() {
+    return {
+      headers: {
+        'Authorization': `Bearer ${this.getToken()}`
+      }
+    };
+  }
+  uploadImage(image: File) {
+    const formData = new FormData();
+    formData.append('value', image.name);
+    formData.append('blog_id', '1');
+    console.log('image', image)
+    this.http.post(this.url + 'blogs/upload', formData, this.getHeaders())
+      .toPromise().then(res => console.log('res', res));
   }
 }
 

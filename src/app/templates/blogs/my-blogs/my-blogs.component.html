@@ -1,0 +1,6 @@
+<ul *ngIf="blogs[0].id">
+    <li *ngFor="let blog of blogs">
+        <a [routerLinkActive]="['active']" [routerLink]="['/blogs/view', blog.id]">{{blog.name}}</a>
+    </li>
+</ul>
+<h1 *ngIf="!blogs[0].id">You Will Add Blogs</h1>

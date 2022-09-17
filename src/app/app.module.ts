@@ -19,6 +19,8 @@ import { RegisterComponent } from './templates/register/register.component';
 import { AddComponent } from './templates/blogs/add/add.component';
 import { BlogsComponent } from './templates/blogs/blogs.component';
 import { LayoutComponent } from './templates/layout/layout.component';
+import { MyBlogsComponent } from './templates/blogs/my-blogs/my-blogs.component';
+import { ViewComponent } from './templates/blogs/view/view.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { LayoutComponent } from './templates/layout/layout.component';
     AddComponent,
     BlogsComponent,
     LayoutComponent,
+    MyBlogsComponent,
+    ViewComponent,
   ],
   imports: [
     BrowserModule,
