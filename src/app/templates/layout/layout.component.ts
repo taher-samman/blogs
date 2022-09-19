@@ -10,7 +10,7 @@ export class LayoutComponent implements OnInit {
 
   constructor(private apis: ApisService) {
     this.apis.getCategories();
-    this.apis.getBlogs();
+    this.apis.getPublicBlogs();
   }
 
   ngOnInit(): void {

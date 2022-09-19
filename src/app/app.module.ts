@@ -21,6 +21,8 @@ import { BlogsComponent } from './templates/blogs/blogs.component';
 import { LayoutComponent } from './templates/layout/layout.component';
 import { MyBlogsComponent } from './templates/blogs/my-blogs/my-blogs.component';
 import { ViewComponent } from './templates/blogs/view/view.component';
+import { ShortcutComponent } from './templates/blogs/shortcut/shortcut.component';
+import { LoaderComponent } from './tools/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { ViewComponent } from './templates/blogs/view/view.component';
     LayoutComponent,
     MyBlogsComponent,
     ViewComponent,
+    ShortcutComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,

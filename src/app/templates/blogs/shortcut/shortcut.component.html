@@ -1,0 +1,12 @@
+<div class="blog-shortcut">
+    <a class="nav-item" [routerLink]="['/blogs/view', data.id]">
+        <div class="blog-img">
+            <img src="{{data.image}}" alt="Blog Image" />
+        </div>
+        <div class="blog-content">
+            <div class="cat">{{data.cat_name}}</div>
+            <h1>{{data.name}}</h1>
+            <p>{{data.description}}</p>
+        </div>
+    </a>
+</div>

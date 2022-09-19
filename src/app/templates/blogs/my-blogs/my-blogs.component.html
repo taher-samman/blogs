@@ -1,6 +1,6 @@
-<ul *ngIf="blogs[0].id">
-    <li *ngFor="let blog of blogs">
-        <a [routerLinkActive]="['active']" [routerLink]="['/blogs/view', blog.id]">{{blog.name}}</a>
-    </li>
-</ul>
+<div class="row" *ngIf="blogs[0].id">
+    <div class="col-md-4" *ngFor="let blog of blogs">
+        <blog-shortcut [data]="blog"></blog-shortcut>
+    </div>
+</div>
 <h1 *ngIf="!blogs[0].id">You Will Add Blogs</h1>

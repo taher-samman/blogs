@@ -1,3 +1,4 @@
+import { LoaderService } from './../loader/loader.service';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -9,7 +10,8 @@ export class ApisService {
   private url = 'http://blogs.backend/';
   categories: (any)[] = [];
   blogs: (any)[] = [];
-  constructor(private http: HttpClient, private router: Router) { }
+  publicBlogs:(any)[] = [];
+  constructor(private http: HttpClient, private router: Router, private loader:LoaderService) { }
 
   login(data: any) {
     const formData = new FormData();
@@ -38,17 +40,36 @@ export class ApisService {
       this.getHeaders()
     ).toPromise().then(res => {
       var response: any = { ...res };
-      if (response['status'])
+      if (response['status']){
         this.blogs = response['data'];
+      }
       if (gotoblogs) {
         this.router.navigate(['blogs']);
       }
     })
   }
+  getPublicBlogs() {
+    this.loader.show = true;
+    this.http.get(this.url + 'site/getallblogs',
+      this.getHeaders()
+    ).toPromise().then(res => {
+      var response: any = { ...res };
+      if (response['status']){
+        this.publicBlogs = response['data'];
+      }
+      setTimeout(() => {
+        this.loader.show = true;
+      }, 3000);
+    })
+  }
+  getBlog(id: number) {
+    return this.http.get(this.url + 'blogs/getblog/' + id, this.getHeaders())
+  }
   getToken() {
     return localStorage.getItem('_blogsToken')?.replace('"', '').replace('"', '')
   }
   addBlog(data: any) {
+    console.log('Data in Apis Request',data)
     const formData = new FormData();
     formData.append('name', data['name']);
     formData.append('description', data['description']);

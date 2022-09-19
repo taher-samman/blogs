@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ApisService } from 'src/app/services/apis/apis.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
+import { Event, Router } from '@angular/router';
 @Component({
   selector: 'add-blog',
   templateUrl: './add.component.html',
@@ -10,12 +10,12 @@ import { Router } from '@angular/router';
 })
 export class AddComponent implements OnInit {
   categories: (any)[] = [];
-
+  image64:any;
   form = new FormGroup({
     name: new FormControl('', [Validators.required]),
     description: new FormControl('', [Validators.required]),
     category: new FormControl('', Validators.required),
-    image: new FormControl('')
+    image: new FormControl('',Validators.required)
   });
   progressBar = false;
   constructor(private apis: ApisService, private _snackBar: MatSnackBar) {
@@ -35,12 +35,20 @@ export class AddComponent implements OnInit {
   }
   ngOnInit(): void {
   }
-  uploadImage(event: any) {
-    // this.apis.uploadImage(event.target.files[0]);
-  }
+  handleUpload(event: any) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+      this.image64 = reader.result;
+      this.form.value.image = this.image64;
+    };
+  }  
   addBlog() {
+    this.form.value.image = this.image64;
     this.progressBar = true;
-    this.apis.addBlog(this.form.value)
+    if(this.form.valid){
+      this.apis.addBlog(this.form.value)
       .toPromise()
       .then(res => {
         var data: any = { ...res };
@@ -56,5 +64,8 @@ export class AddComponent implements OnInit {
       .finally(() => {
         this.progressBar = false;
       });
+    }else{
+      this.progressBar = false;
+    }
   }
 }
