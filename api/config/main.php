@@ -44,7 +44,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                // '<auth:\w+>/<login:\w+>/<id:\w+>' => '<auth>/<login>'
+                '<blogs:\w+>/<getblog:\w+>/<id:\w+>' => '<blogs>/<getblog>'
             ],
         ],
 

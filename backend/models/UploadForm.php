@@ -28,4 +28,13 @@ class UploadForm extends Model
             return false;
         }
     }
+    public function upload64($file)
+    {
+        if ($this->validate()) {
+            $this->imageFile->saveAs($file);
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

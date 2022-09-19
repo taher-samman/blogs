@@ -12,6 +12,8 @@ use yii\filters\auth\CompositeAuth;
 use yii\filters\auth\HttpBasicAuth;
 use yii\filters\auth\HttpBearerAuth;
 use yii\filters\auth\QueryParamAuth;
+use common\models\BlogsImages;
+use yii\helpers\Url;
 
 /**
  * Site controller
@@ -21,11 +23,13 @@ class SiteController extends Controller
     public $controller;
     public $id;
     public $categoriesModel;
+    public $blogsImages;
     public function __construct($id, $controller)
     {
         $this->id = $id;
         $this->controller = $controller;
         $this->categoriesModel = new Category();
+        $this->blogsImages = new BlogsImages();
         parent::__construct($id, $controller);
     }
     public function behaviors()
@@ -44,6 +48,7 @@ class SiteController extends Controller
                 'actions' => [
                     'getcategories' => ['get'],
                     'getblogs' => ['get'],
+                    'getallblogs' => ['get'],
                 ],
             ],
             'authenticator' => [
@@ -106,18 +111,20 @@ class SiteController extends Controller
     }
     public function actionGetblogs()
     {
+        $user_id = $this->getUser();
         $response = Yii::$app->response;
         $response->format = \yii\web\Response::FORMAT_JSON;
         $response->statusCode = 200;
         $blogs = [];
         $model = new Blogs();
-        $query = $model->find()->where(['user_id' => 1])->andWhere(['enabled' => 1])->all();
+        $query = $model->find()->where(['user_id' => $user_id])->andWhere(['enabled' => 1])->all();
         foreach ($query as $key => $blog) {
             $blogs[] = [
                 'id' => $blog->id,
                 'name' => $blog->name,
                 'description' => $blog->description,
-                'cat_id' => $blog->cat_id
+                'cat_id' => $blog->cat_id,
+                'image' => Yii::getAlias('@apiimages') . '/blogs/' . $this->getBlogImage($blog->id)
             ];
         }
         if (count($blogs) == 0) {
@@ -129,5 +136,38 @@ class SiteController extends Controller
             'data' => $blogs
         ];
         return $response;
+    }
+    public function actionGetallblogs()
+    {
+        $response = Yii::$app->response;
+        $response->format = \yii\web\Response::FORMAT_JSON;
+        $response->statusCode = 200;
+        $blogs = [];
+        $model = new Blogs();
+        $query = $model->find()->where(['enabled' => 1])->all();
+        foreach ($query as $key => $blog) {
+            $blogs[] = [
+                'id' => $blog->id,
+                'user_id' => $blog->user_id,
+                'name' => $blog->name,
+                'description' => $blog->description,
+                'cat_id' => $blog->cat_id,
+                'image' => Yii::getAlias('@apiimages') . '/blogs/' . $this->getBlogImage($blog->id)
+            ];
+        }
+        if (count($blogs) == 0) {
+            // $response->statusCode = 401;
+            $blogs = ['Ma 3na Bloget'];
+        }
+        $response->data = [
+            'status' => true,
+            'data' => $blogs
+        ];
+        return $response;
+    }
+    public function getBlogImage($blog)
+    {
+        $image = $this->blogsImages->find()->where(['blog_id' => $blog])->one();
+        return $image->value;
     }
 }

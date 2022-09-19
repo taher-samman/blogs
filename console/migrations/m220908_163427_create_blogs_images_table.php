@@ -18,7 +18,7 @@ class m220908_163427_create_blogs_images_table extends Migration
         $this->createTable('{{%blogs_images}}', [
             'id' => $this->primaryKey(),
             'blog_id' => $this->integer(),
-            'value' => $this->string(255),
+            'value' => $this->text(),
         ]);
 
         // creates index for column `blog_id`
