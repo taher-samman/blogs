@@ -70,7 +70,7 @@ use yii\db\BaseActiveRecord;
  * @author Alexander Kochetov <creocoder@gmail.com>
  * @since 2.0
  */
-class TimestampBehavior extends AttributeBehavior
+class CreatedAtBehavior extends AttributeBehavior
 {
     /**
      * @var string the attribute that will receive timestamp value
@@ -115,7 +115,7 @@ class TimestampBehavior extends AttributeBehavior
     protected function getValue($event)
     {
         if ($this->value === null) {
-            return time();
+            return date('Y-m-d H:i:s');
         }
 
         return parent::getValue($event);

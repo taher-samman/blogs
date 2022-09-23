@@ -44,7 +44,9 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '<blogs:\w+>/<getblog:\w+>/<id:\w+>' => '<blogs>/<getblog>'
+                '<blogs:\w+>/<getblog:\w+>/<id:\w+>' => '<blogs>/<getblog>',
+                '<blogs:\w+>/<delete:\w+>/<id:\w+>' => '<blogs>/<delete>',
+                '<blogs:\w+>/<removeimage:\w+>/<id:\w+>' => '<blogs>/<removeimage>'
             ],
         ],
 

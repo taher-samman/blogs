@@ -41,6 +41,14 @@ class m220908_164358_create_likes_table extends Migration
             'CASCADE'
         );
 
+        // unique user and blog
+        $this->createIndex(
+            '{{%idx-unique-blog_id-user_id}}',
+            '{{%likes}}',
+            ['blog_id', 'user_id'],
+            true
+        );
+
         // creates index for column `user_id`
         $this->createIndex(
             '{{%idx-likes-user_id}}',

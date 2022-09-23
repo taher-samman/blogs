@@ -13,7 +13,6 @@ use yii\filters\auth\HttpBasicAuth;
 use yii\filters\auth\HttpBearerAuth;
 use yii\filters\auth\QueryParamAuth;
 use common\models\BlogsImages;
-use yii\helpers\Url;
 
 /**
  * Site controller
@@ -119,23 +118,33 @@ class SiteController extends Controller
         $model = new Blogs();
         $query = $model->find()->where(['user_id' => $user_id])->andWhere(['enabled' => 1])->all();
         foreach ($query as $key => $blog) {
-            $blogs[] = [
-                'id' => $blog->id,
-                'name' => $blog->name,
-                'description' => $blog->description,
-                'cat_id' => $blog->cat_id,
-                'image' => Yii::getAlias('@apiimages') . '/blogs/' . $this->getBlogImage($blog->id)
-            ];
+            $array = [];
+            $array['id'] = $blog->id;
+            $array['user_id'] = $blog->user_id;
+            $user = User::findIdentity($blog->user_id);
+            $array['username'] = $user->username;
+            $array['email'] = $user->email;
+            $array['name'] = $blog->name;
+            $array['description'] = $blog->description;
+            $array['cat_name'] = $this->getCategory($blog->cat_id);
+            $array['cat_id'] = $blog->cat_id;
+            $array['image'] = Yii::getAlias('@apiimages') . '/blogs/' . $this->getBlogImage($blog->id);
+            $blogs[] = $array;
         }
         if (count($blogs) == 0) {
             // $response->statusCode = 401;
-            $blogs = ['Ma 3na Bloget'];
+            $blogs = [];
         }
         $response->data = [
             'status' => true,
-            'data' => $blogs
+            'data' => $query
         ];
         return $response;
+    }
+    public function getCategory($id)
+    {
+        $category = $this->categoriesModel->find()->where(['id' => $id])->one();
+        return $category->name;
     }
     public function actionGetallblogs()
     {
@@ -143,25 +152,28 @@ class SiteController extends Controller
         $response->format = \yii\web\Response::FORMAT_JSON;
         $response->statusCode = 200;
         $blogs = [];
-        $model = new Blogs();
-        $query = $model->find()->where(['enabled' => 1])->all();
-        foreach ($query as $key => $blog) {
-            $blogs[] = [
-                'id' => $blog->id,
-                'user_id' => $blog->user_id,
-                'name' => $blog->name,
-                'description' => $blog->description,
-                'cat_id' => $blog->cat_id,
-                'image' => Yii::getAlias('@apiimages') . '/blogs/' . $this->getBlogImage($blog->id)
-            ];
-        }
-        if (count($blogs) == 0) {
-            // $response->statusCode = 401;
-            $blogs = ['Ma 3na Bloget'];
-        }
+        $query = Blogs::find()->where(['enabled' => 1])->all();
+        // foreach ($query as $key => $blog) {
+        //     $array = [];
+        //     $array['id'] = $blog->id;
+        //     $array['user_id'] = $blog->user_id;
+        // $user = User::findIdentity($blog->user_id);
+        //     $array['username'] = $user->username;
+        //     $array['email'] = $user->email;
+        //     $array['name'] = $blog->name;
+        //     $array['description'] = $blog->description;
+        //     $array['cat_name'] = $this->getCategory($blog->cat_id);
+        //     $array['cat_id'] = $blog->cat_id;
+        //     $array['image'] = Yii::getAlias('@apiimages') . '/blogs/' . $this->getBlogImage($blog->id);
+        //     $blogs[] = $array;
+        // }
+        // if (count($blogs) == 0) {
+        //     // $response->statusCode = 401;
+        //     $blogs = [];
+        // }
         $response->data = [
             'status' => true,
-            'data' => $blogs
+            'data' => $query
         ];
         return $response;
     }
