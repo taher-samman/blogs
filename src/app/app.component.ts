@@ -1,3 +1,4 @@
+import { LoaderService } from './services/loader/loader.service';
 import { Component } from '@angular/core';
 import { ApisService } from './services/apis/apis.service';
 
@@ -8,6 +9,7 @@ import { ApisService } from './services/apis/apis.service';
 })
 export class AppComponent {
   title = 'blogs';
-  constructor(private apis: ApisService) {
+  constructor(private apis: ApisService,private loader: LoaderService) {
+    this.loader.show.next(false);
   }
 }

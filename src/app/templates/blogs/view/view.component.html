@@ -1,4 +1,56 @@
-<div class="single-blog-view" *ngIf="name.length > 0">
-<h1>{{name}}</h1>
-<h2>{{id}}</h2>
+<div class="container" *ngIf="blog != 0">
+    <div class="name">
+        <h1>{{blog.user.username}}</h1>
+    </div>
+    <div class="row row-single-view" *ngIf="blog.id">
+        <div class="col-md-5 col-img">
+            <div class="slider">
+                <div class="simg" *ngFor="let image of blog.images | keyvalue">
+                    <i class="fa fa-times" aria-hidden="true" (click)="removeImage(image.key)"></i>
+                    <img src="{{image.value}}" alt="Blog Image">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-content">
+            <h1>{{blog.name}}</h1>
+            <p>{{blog.description}}</p>
+            <div class="cat">
+                <h1>{{blog.cat_name}}</h1>
+            </div>
+        </div>
+        <div class="edit" *ngIf="canEdit()">
+            <a [routerLink]="['/blogs/edit',blog.id]">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </a>
+            <div class="delete" (click)="delete()">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="toolbar">
+        <div class="row r-toolbar">
+            <div class="col-md-4 col-likes">
+                <ul *ngIf="likes.length > 0">
+                    <li class="list-group-item" *ngFor="let like of likes">
+                        <a href="" class="nav-link">
+                            <i class="fa fa-thumbs-up" aria-hidden="true"></i> <span>{{like.username}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8 col-comments">
+                <ul class="list-group" *ngIf="comments.length > 0">
+                    <li class="list-group-item" *ngFor="let comment of comments">
+                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                        <span>
+                            <a class="comment-user" href="">
+                                <b>{{comment.user.username}}</b> :: {{comment.comment}}
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+                <blog-toolbar [id]="blog.id" [border]="false"></blog-toolbar>
+            </div>
+        </div>
+    </div>
 </div>

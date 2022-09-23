@@ -1,6 +1,6 @@
-<div class="row" *ngIf="blogs[0].id">
+<div class="row" *ngIf="blogs.length > 0">
     <div class="col-md-4" *ngFor="let blog of blogs">
         <blog-shortcut [data]="blog"></blog-shortcut>
     </div>
 </div>
-<h1 *ngIf="!blogs[0].id">You Will Add Blogs</h1>
+<h1 *ngIf="blogs.length == 0">No Blogs</h1>

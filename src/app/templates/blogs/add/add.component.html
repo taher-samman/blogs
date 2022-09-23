@@ -19,6 +19,7 @@
             <label for="formFile" class="form-label">Blog Image</label>
             <input class="form-control" formControlName="image" (change)="handleUpload($event)" type="file" id="formFile">
             <div *ngIf="!image?.valid" class="alert alert-danger">Image Required</div>
+            <img src="{{image64}}" width="100" alt="">
         </div>
         <button type="submit" class="btn btn-primary">Add Blog</button>
     </form>

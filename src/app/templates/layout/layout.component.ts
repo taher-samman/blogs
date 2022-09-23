@@ -1,3 +1,4 @@
+import { LoaderService } from './../../services/loader/loader.service';
 import { Component, OnInit } from '@angular/core';
 import { ApisService } from 'src/app/services/apis/apis.service';
 
@@ -8,9 +9,7 @@ import { ApisService } from 'src/app/services/apis/apis.service';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor(private apis: ApisService) {
-    this.apis.getCategories();
-    this.apis.getPublicBlogs();
+  constructor(private loader: LoaderService,private apis:ApisService) {
   }
 
   ngOnInit(): void {

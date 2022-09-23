@@ -7,8 +7,11 @@ import { ApisService } from 'src/app/services/apis/apis.service';
   styleUrls: ['./navbar.component.less']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  user:any;
+  constructor(private router: Router) { 
+    var user:any = localStorage.getItem('_blogsUser');
+    this.user = JSON.parse(user);
+  }
 
   ngOnInit(): void {
   }

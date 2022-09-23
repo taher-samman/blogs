@@ -1,1 +1,10 @@
-<h1>home</h1>
+<div class="container">
+    <div class="public-blogs">
+        <h1  *ngIf="publicBlogs.length == 0">No Posts</h1>
+        <div class="row" *ngIf="publicBlogs.length > 0">
+            <div class="col-md-3" *ngFor="let blog of publicBlogs">
+                <blog-shortcut [data]="blog"></blog-shortcut>
+            </div>
+        </div>
+    </div>
+</div>

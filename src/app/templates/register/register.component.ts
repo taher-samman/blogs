@@ -29,20 +29,22 @@ export class RegisterComponent {
     this.router.navigate(['login']);
   }
   register() {
-    this.progressBar = true;
-    this.apis.register(this.form.value)
-      .toPromise().then(res => {
-        var data: any = { ...res };
-        if (data['status']) {
-          this._snackBar.open('Hello ' + data['user']['username'], 'Success', { duration: 2000, });
-          localStorage.setItem('_blogsUser', JSON.stringify(data['user']));
-          localStorage.setItem('_blogsToken', data['token']);
-          this.router.navigate(['']);
-        }
-      }).catch(error => {
-        this._snackBar.open(error.error.message, 'Error', { duration: 4000, });
-      }).finally(() => {
-        this.progressBar = false;
-      })
+    if (this.form.valid) {
+      this.progressBar = true;
+      this.apis.register(this.form.value)
+        .toPromise().then(res => {
+          var data: any = { ...res };
+          if (data['status']) {
+            this._snackBar.open('Hello ' + data['user']['username'], 'Success', { duration: 2000, });
+            localStorage.setItem('_blogsUser', JSON.stringify(data['user']));
+            localStorage.setItem('_blogsToken', data['token']);
+            this.router.navigate(['']);
+          }
+        }).catch(error => {
+          this._snackBar.open(error.error.message, 'Error', { duration: 4000, });
+        }).finally(() => {
+          this.progressBar = false;
+        })
+    }
   }
 }

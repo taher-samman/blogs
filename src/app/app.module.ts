@@ -23,6 +23,13 @@ import { MyBlogsComponent } from './templates/blogs/my-blogs/my-blogs.component'
 import { ViewComponent } from './templates/blogs/view/view.component';
 import { ShortcutComponent } from './templates/blogs/shortcut/shortcut.component';
 import { LoaderComponent } from './tools/loader/loader.component';
+import { EditComponent } from './templates/blogs/edit/edit.component';
+import { ToolbarComponent } from './tools/toolbar/toolbar.component';
+import { LikeComponent } from './tools/toolbar/like/like.component';
+import { CommentComponent } from './tools/toolbar/comment/comment.component';
+import { ResultComponent } from './tools/toolbar/result/result.component';
+import { LoaderToolbarComponent } from './tools/toolbar/loader/loader.component';
+import { ProfileComponent } from './templates/blogs/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +49,13 @@ import { LoaderComponent } from './tools/loader/loader.component';
     ViewComponent,
     ShortcutComponent,
     LoaderComponent,
+    EditComponent,
+    ToolbarComponent,
+    LikeComponent,
+    CommentComponent,
+    ResultComponent,
+    LoaderToolbarComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

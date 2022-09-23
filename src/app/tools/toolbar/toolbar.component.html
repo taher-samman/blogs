@@ -1,0 +1,14 @@
+<div class="toolbar" [class.border]="border">
+    <toolbar-loader [loader]="loader"></toolbar-loader>
+    <div class="like-result">
+        <div class="like">
+            <blog-like [id]="id" [loader]="loader"></blog-like>
+        </div>
+        <div class="result">
+            <toolbar-result [id]="id"></toolbar-result>
+        </div>
+    </div>
+    <div class="comments">
+        <blog-comment [id]="id" [loader]="loader"></blog-comment>
+    </div>
+</div>

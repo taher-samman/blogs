@@ -1,7 +1,8 @@
 <div class="blog-shortcut">
-    <a class="nav-item" [routerLink]="['/blogs/view', data.id]">
+    <blog-profile [user]="data.user" [created_at]="data.created_at"></blog-profile>
+    <a class="nav-item" [routerLink]="[currentRoute+'/view', data.id]">
         <div class="blog-img">
-            <img src="{{data.image}}" alt="Blog Image" />
+            <img *ngFor="let image of data.images | keyvalue" src="{{image.value}}" alt="Blog Image" />
         </div>
         <div class="blog-content">
             <div class="cat">{{data.cat_name}}</div>
@@ -9,4 +10,5 @@
             <p>{{data.description}}</p>
         </div>
     </a>
+    <blog-toolbar [id]="data.id"></blog-toolbar>
 </div>

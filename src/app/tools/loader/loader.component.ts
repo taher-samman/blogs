@@ -1,5 +1,6 @@
 import { LoaderService } from './../../services/loader/loader.service';
 import { Component, OnInit } from '@angular/core';
+import { takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-loader',
@@ -7,13 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./loader.component.less']
 })
 export class LoaderComponent implements OnInit {
-  show:boolean;
+  show:boolean = true;
   constructor(private loader:LoaderService) {
-    this.show = this.loader.show;
+    // this.show = this.loader.show;
    }
 
   ngOnInit(): void {
-    this.show = this.loader.show;
+    this.loader.show.subscribe(data => this.show = data);
   }
-
 }

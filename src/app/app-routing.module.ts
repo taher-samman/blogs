@@ -1,3 +1,4 @@
+import { EditComponent } from './templates/blogs/edit/edit.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './templates/home/home.component';
@@ -21,11 +22,13 @@ const routes: Routes = [
     path: '', component: LayoutComponent, canActivate: [Auth], children: [
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'view/:id', component: ViewComponent },
       {
-        path: 'blogs', component: BlogsComponent, canActivate: [Categories, Blogs], children: [
-          { path: '', component: MyBlogsComponent, canActivate: [Blogs] },
-          { path: 'add', component: AddComponent },
+        path: 'blogs', component: BlogsComponent, children: [
+          { path: '', component: MyBlogsComponent },
+          { path: 'add', component: AddComponent},
           { path: 'view/:id', component: ViewComponent },
+          { path: 'edit/:id', component: EditComponent },
         ]
       },
     ]

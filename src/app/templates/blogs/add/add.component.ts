@@ -1,8 +1,9 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ApisService } from 'src/app/services/apis/apis.service';
+import { DataService } from 'src/app/services/data/data.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Event, Router } from '@angular/router';
+import { ApisService } from 'src/app/services/apis/apis.service';
 @Component({
   selector: 'add-blog',
   templateUrl: './add.component.html',
@@ -18,8 +19,9 @@ export class AddComponent implements OnInit {
     image: new FormControl('',Validators.required)
   });
   progressBar = false;
-  constructor(private apis: ApisService, private _snackBar: MatSnackBar) {
-    this.categories = this.apis.categories;
+  constructor(private router: Router,private data: DataService,private apis:ApisService, private _snackBar: MatSnackBar) {
+    this.apis.getCategories();
+    this.data.categories.subscribe(data => this.categories = data);
   }
   get name() {
     return this.form.get('name');
@@ -46,15 +48,16 @@ export class AddComponent implements OnInit {
   }  
   addBlog() {
     this.form.value.image = this.image64;
-    this.progressBar = true;
+    
     if(this.form.valid){
+      this.progressBar = true;
       this.apis.addBlog(this.form.value)
       .toPromise()
       .then(res => {
         var data: any = { ...res };
         if (data['status']) {
           this._snackBar.open(`Blog added SUCCESSFLY with id #  ${data['id']}`, 'Success', { duration: 2000, });
-          this.apis.getBlogs(true);
+          this.router.navigate(['blogs']);
         }
       })
       .catch(error => {
